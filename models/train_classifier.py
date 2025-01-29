@@ -13,10 +13,10 @@ nltk.download(['punkt', 'wordnet', 'averaged_perceptron_tagger'])
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
-from sklearn.model_selection import GridSearchCV, train_test_split
+from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.multioutput import MultiOutputClassifier
-from sklearn.pipeline import Pipeline, FeatureUnion
+from sklearn.pipeline import Pipeline
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.metrics import classification_report
